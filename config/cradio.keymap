@@ -70,10 +70,10 @@
         
         layer_lock {
             bindings = <
-            &nobody &nobody &nobody &nobody &nobody        &nobody &nobody &nobody &nobody &nobody
-            &nobody &nobody &nobody &nobody &nobody        &nobody &nobody &nobody &nobody &nobody 
-            &nobody &nobody &nobody &nobody &nobody        &nobody &nobody &nobody &nobody &nobody    
-                                    &nobody &nobody        &nobody &nobody 
+            &none &none &none &none &none        &none &none &none &none &none
+            &none &none &none &none &none        &none &none &none &none &none 
+            &none &none &none &none &none        &none &none &none &none &none    
+                              &none &none        &none &none
             >;
 		};	
         
