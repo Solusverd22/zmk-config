@@ -43,8 +43,8 @@
                 
        	layer_default {
             bindings = <
-            &kp Q    &kp W &kp E &kp R     &kp T 		    &kp Y   &kp U  &kp I &kp O         &kp P 
-            &kp A    &kp S &kp D &kp F     &kp G 	        &kp H   &kp J  &kp K &kp L         &kp BACKSPACE
+            &kp Q    &kp W &kp E &kp R     &kp T            &kp Y   &kp U  &kp I &kp O         &kp P 
+            &kp A    &kp S &kp D &kp F     &kp G            &kp H   &kp J  &kp K &kp L         &kp BACKSPACE
             &kp LALT &kp Z &kp X &kp C     &kp V            &kp B   &kp N  &kp M &mt LGUI  DEL &kp ENTER
                                  &kp LCTRL &kp LSHFT  	    &kp SPC &mtt LC(LS(LALT)) 1 
             >;
@@ -52,19 +52,19 @@
 
        	layer_symbols {
             bindings = <
-            &kp N1    &kp N2   &kp N3   &kp N4    &kp N5               &kp N6    &kp N7     &kp N8   &kp N9    &kp N0 
-            &kp GRAVE &kp TAB  &kp UP   &kp LBKT  &kp RBKT             &kp SEMI  &kp APOS   &kp LBKT &kp RBKT  &kp BACKSPACE 
-            &kp LALT  &kp LEFT &kp DOWN &kp RIGHT &kp BACKSPACE        &kp COMMA &kp PERIOD &kp FSLH &kp EQUAL &kp ENTER 
-                                        &to 0     &kp LSHFT            &kp SPACE &to 2 
+            &kp MINUS &kp N7  &kp N8   &kp N9       &kp N0                     &kp LBKT  &kp RBKT   &kp UP   &kp GRAVE &kp NON_US_HASH
+            &kp EQUAL &kp N4  &kp N5   &kp N6       &kp NON_US_BACKSLASH       &kp FSLH  &kp LEFT   &kp DOWN &kp RIGHT &kp BACKSPACE 
+            &kp LALT  &kp N1 &kp N2    &kp N3       &kp TAB                    &kp COMMA &kp PERIOD &kp APOS &kp SEMI  &kp ENTER 
+                                       &mtt LCTRL 0 &kp LSHFT                  &kp SPACE &mtt LC(LS(LALT)) 2 
             >;
 		};	
 		
 		layer_etc {
             bindings = <
-            &kp ESC     &trans        &trans        &trans        &kp C_VOL_UP        &kp PRINTSCREEN &kp F1 &kp F2  &kp F4  &kp F4
-            &to 3       &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_VOL_DN        &kp C_AL_CALC   &kp F5 &kp F6  &kp F7  &kp F8 
+            &kp ESC     &kp HOME      &reset        &kp INS       &kp C_VOL_UP        &kp PRINTSCREEN &kp F1 &kp F2  &kp F4  &kp F4
+            &to 3       &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_VOL_DN        &kp K_CALC      &kp F5 &kp F6  &kp F7  &kp F8 
             &bt BT_CLR  &bt BT_SEL(0) &bt BT_SEL(1) &bt BT_SEL(2) &kp C_MUTE          &kp CAPS        &kp F9 &kp F10 &kp F11 &kp F12   
-                                                    &to 0         &kp LALT  		  &kp SPACE       &trans 
+                                                    &mtt LCTRL 0  &kp LSHFT  		  &kp SPACE       &kp LC(LS(LALT))
             >;
 		};	
         
