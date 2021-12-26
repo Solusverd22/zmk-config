@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2020 The ZMK Contributors
- *
+ * goat
  * SPDX-License-Identifier: MIT
  */
 
@@ -70,10 +70,10 @@
         
         layer_lock {
             bindings = <
-            &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans
-            &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans 
-            &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans    
-                                 &trans &trans        &trans &trans 
+            &nobody &nobody &nobody &nobody &nobody        &nobody &nobody &nobody &nobody &nobody
+            &nobody &nobody &nobody &nobody &nobody        &nobody &nobody &nobody &nobody &nobody 
+            &nobody &nobody &nobody &nobody &nobody        &nobody &nobody &nobody &nobody &nobody    
+                                    &nobody &nobody        &nobody &nobody 
             >;
 		};	
         
