@@ -20,7 +20,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "MOD_TAP_TO";
             #binding-cells = <2>;
-            flavour = "balanced";
+            flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             bindings = <&kp>, <&to>;
