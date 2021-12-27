@@ -16,6 +16,7 @@
 
 / { 
     behaviors {
+        //mod kp when u hold, and to layer when you tap
         mtt:mod_tap_to {
             compatible = "zmk,behavior-hold-tap";
             label = "MOD_TAP_TO";
@@ -24,6 +25,16 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             bindings = <&kp>, <&to>;
+        };
+        //momentary layer on hold, and to layer on tap
+        mlt:momentary_layer_tap_to {
+            compatible = "zmk,behavior-hold-tap";
+            label="MOMENTARY_LAYER_TAP_TO";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            bindings = <&mo>, <&to>;
         };
     };
 
@@ -46,16 +57,16 @@
             &kp Q    &kp W &kp E &kp R     &kp T            &kp Y   &kp U  &kp I &kp O         &kp P 
             &kp A    &kp S &kp D &kp F     &kp G            &kp H   &kp J  &kp K &kp L         &kp BACKSPACE
             &kp LALT &kp Z &kp X &kp C     &kp V            &kp B   &kp N  &kp M &mt LGUI  DEL &kp ENTER
-                                 &kp LCTRL &kp LSHFT  	    &kp SPC &mtt LC(LS(LALT)) 1 
+                                 &kp LCTRL &kp LSHFT  	    &kp SPC &ltt 1 1 
             >;
 		};
 
        	layer_symbols {
             bindings = <
-            &kp MINUS &kp N7  &kp N8   &kp N9       &kp N0                     &kp LBKT  &kp RBKT   &kp UP   &kp GRAVE &kp NON_US_HASH
-            &kp EQUAL &kp N4  &kp N5   &kp N6       &kp NON_US_BACKSLASH       &kp FSLH  &kp LEFT   &kp DOWN &kp RIGHT &kp BACKSPACE 
-            &kp LALT  &kp N1 &kp N2    &kp N3       &kp TAB                    &kp COMMA &kp PERIOD &kp APOS &kp SEMI  &kp ENTER 
-                                       &mtt LCTRL 0 &kp LSHFT                  &kp SPACE &mtt LC(LS(LALT)) 2 
+            &kp GRAVE &kp LBKT  &kp UP   &kp RBKT     &kp NON_US_BACKSLASH        &kp N8    &kp N8 &kp N9 &kp N0    &kp NON_US_HASH
+            &kp TAB   &kp LEFT  &kp DOWN &kp RIGHT    &kp SEMI                    &kp N4    &kp N5 &kp N6 &kp MINUS &kp BACKSPACE 
+            &kp LALT  &kp COMMA &kp APOS &kp PERIOD   &kp FSLH                    &kp N1    &kp N2 &kp N3 &kp PLUS  &kp ENTER 
+                                         &mtt LCTRL 0 &kp LSHFT                   &kp SPACE &mtt LC(LS(LALT)) 2 
             >;
 		};	
 		
