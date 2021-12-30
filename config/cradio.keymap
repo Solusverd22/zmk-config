@@ -63,7 +63,7 @@
 
        	layer_symbols {
             bindings = <
-            &kp GRAVE &kp LBKT  &kp UP   &kp RBKT     &kp NON_US_BACKSLASH        &kp N8    &kp N8 &kp N9 &kp N0    &kp NON_US_HASH
+            &kp GRAVE &kp LBKT  &kp UP   &kp RBKT     &kp NON_US_BACKSLASH        &kp N7    &kp N8 &kp N9 &kp N0    &kp NON_US_HASH
             &kp TAB   &kp LEFT  &kp DOWN &kp RIGHT    &kp SEMI                    &kp N4    &kp N5 &kp N6 &kp MINUS &kp BACKSPACE 
             &kp LALT  &kp COMMA &kp APOS &kp PERIOD   &kp FSLH                    &kp N1    &kp N2 &kp N3 &kp PLUS  &kp ENTER 
                                          &mtt LCTRL 0 &kp LSHFT                   &kp SPACE &mtt LC(LS(LALT)) 2 
