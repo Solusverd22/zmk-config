@@ -72,14 +72,14 @@
             bindings = <
             &kp GRAVE &kp LBKT  &kp UP   &kp RBKT     &kp NON_US_BACKSLASH        &kp N7    &kp N8 &kp N9 &kp N0    &kp NON_US_HASH
             &kp TAB   &kp LEFT  &kp DOWN &kp RIGHT    &kp SEMI                    &kp N4    &kp N5 &kp N6 &kp MINUS &kp BACKSPACE 
-            &kp LALT  &kp COMMA &kp APOS &kp PERIOD   &kp FSLH                    &kp N1    &kp N2 &kp N3 &kp PLUS  &kp ENTER 
+            &kp LALT  &kp COMMA &kp APOS &kp PERIOD   &kp FSLH                    &kp N1    &kp N2 &kp N3 &kp EQUAL  &kp ENTER 
                                          &mtt LCTRL 0 &kp LSHFT                   &kp SPACE &mtt LC(LS(LALT)) 2 
             >;
 		};	
 		
 		layer_etc {
             bindings = <
-            &kp ESC     &kp HOME      &kp F22       &kp INS       &kp C_VOL_UP        &kp PRINTSCREEN &kp F1 &kp F2  &kp F4  &kp F4
+            &kp ESC     &kp HOME      &kp F22       &kp INS       &kp C_VOL_UP        &kp PRINTSCREEN &kp F1 &kp F2  &kp F3  &kp F4
             &kp F23     &kp C_PREV    &kp C_PP      &kp C_NEXT    &kp C_VOL_DN        &kp K_CALC      &kp F5 &kp F6  &kp F7  &kp F8 
             &bt BT_CLR  &bt BT_SEL(0) &bt BT_SEL(1) &bt BT_SEL(2) &kp C_MUTE          &kp CAPS        &kp F9 &kp F10 &kp F11 &kp F12   
                                                     &mtt LCTRL 0  &kp LSHFT  		  &kp SPACE       &kp LC(LS(LALT))
